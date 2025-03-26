@@ -12,5 +12,10 @@ def hello():
 def data():
     return jsonify({"data": [1, 2, 3, 4, 5]})
 
+@app.route('/api/foo', methods=['GET'])
+def foo():
+    return jsonify({"message": "Hello, Foo"})
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
