@@ -43,7 +43,7 @@ def data():
     return jsonify({"data": [1, 2, 3, 4, 5]})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
 ```
 
 3. Crear el archivo requirements.txt en el root del proyecto con el comando: freeze
